@@ -2,8 +2,11 @@
 The python script for the stepwise feature elimination in nonlinear SVR model,more information can be seen in our paper of 'Predicting Enzymatic Hydrolysis Half-lives of New Chemicals Using Support Vector Regression Models Based on Stepwise Feature Elimination' in the journal of  molecular informatics
 
 #########################################################################################
-Author:shenwanxiang,Tsinghua university, Email:shenwx13@mails.tsinghua.edu.cn
-Stepwise Feature Elimination,SFE version 1: the feature was eliminated one by one based on the scoring of the target function.
+Author:shenwanxiang,Tsinghua university,
+Emails:shenwanxiang@tsinghua.org.cn; shenwx13@mails.tsinghua.edu.cn
+Any bugs is welcomed
+Verion 1
+The Stepwise Feature Elimination,SFE version 1: the feature was eliminated one by one based on the scoring of the target function.
 The target function f (x) was defined by the average R^2 or average mean squared error (MSE) of internal k-fold cross validation or test set validatin. 
 In each cycle, the eliminated score of each feature was calculated after transversal deletion, 
 finally the feature with minimal elimination MSE was really deleted.
@@ -23,7 +26,7 @@ you can also define your own target function
 The parameter of des_num is very important:
 if the number of total features is 100, however the des_num is set as 80 by yourself,
 ,then only the top 80 columns(features) will be eliminated, namely the last 20 features is fixed by yourself(if you think these 20 features are very important features). 
-This is very useful for reduction of the calculating cost, and the global optimization of the feature combination is easly achieved  
+This can be very useful for reduction of the calculating cost, and the global optimization of the feature combination is easly achieved  
 
 
 ###
